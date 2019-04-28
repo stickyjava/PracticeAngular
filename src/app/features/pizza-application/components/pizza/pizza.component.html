@@ -1,0 +1,33 @@
+<!--<ul>
+  <li *ngFor="let pizza of getPizza$ | async">
+    {{pizza|json}}
+  </li>
+</ul>-->
+
+<table border="1px">
+  <tr>
+  <th>
+    Name
+  </th>
+  <th>
+    Toppings
+  </th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let pizza of getPizza$ | async">
+    <td><a href="#" (click)="onClickPizza(pizza.toppings)">{{pizza.name}}</a></td>
+    <td>
+    <ul>
+      <li  *ngFor="let topping of pizza.toppings">
+        {{topping.id}} - {{topping.name}}
+      </li>
+    </ul>
+    </td>
+    <td><button>Add</button></td>
+    <td><button>Remove</button></td>
+  </tr>
+</table>
+
+
+<app-pizza-details *ngIf="toppings" [toppings]="toppings"></app-pizza-details>

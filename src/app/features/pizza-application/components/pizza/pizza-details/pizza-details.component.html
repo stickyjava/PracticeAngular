@@ -1,0 +1,9 @@
+<ul *ngIf="toppings; else nocontent">
+  <li *ngFor="let topping of toppings">
+    {{topping.id}}
+    {{topping.name}}
+  </li>
+</ul>
+<ng-template #noContent>
+  <span> No Record Available</span>
+</ng-template>

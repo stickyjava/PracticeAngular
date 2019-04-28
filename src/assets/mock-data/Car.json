@@ -1,0 +1,17 @@
+[
+  {
+  "brand": "BMW",
+  "model": "19",
+  "color": "Black"
+  },
+  {
+    "brand": "Toyota",
+    "model": "17",
+    "color": "Metallic Grey"
+  },
+  {
+    "brand": "Acura",
+    "model": "16",
+    "color": "Red"
+  }
+]
